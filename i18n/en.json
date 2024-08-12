@@ -1,0 +1,71 @@
+{
+  "@metadata": {
+    "authors": [
+      "lvefunc"
+    ]
+  },
+  "workflows": "Workflows",
+  "workflows-special-my-workflows": "My workflows",
+  "workflows-special-my-tasks": "My tasks",
+  "workflows-special-create-workflow": "Create workflow",
+
+  "echo-pref-tooltip-workflows": "Workflows",
+
+  "workflows-notification-new-task-bundled": "You have got $1 new tasks!",
+  "workflows-notification-new-task": "You have got a new task!",
+  "workflows-notification-state-changed-bundled": "$1 of your workflows got their status updated!",
+  "workflows-notification-state-changed": "Status of your workflow \"$1\" got changed to \"$2\"!",
+
+  "workflows-model-state-empty-timestamp": "–",
+  "workflows-model-state-not-started": "Not started",
+  "workflows-model-state-in-progress": "In progress",
+  "workflows-model-state-completed": "Completed",
+  "workflows-model-state-skipped": "Skipped",
+  "workflows-model-state-obsolete": "Obsolete",
+
+  "workflows-model-required-input-boolean": "Boolean",
+  "workflows-model-required-input-integer": "Integer",
+  "workflows-model-required-input-text": "Text",
+
+  "workflows-task-table-header-identifier": "Identifier",
+  "workflows-task-table-header-type": "Type",
+  "workflows-task-table-header-assignee": "Assignee",
+  "workflows-task-table-header-execution-state": "Execution state",
+  "workflows-task-table-header-created-at": "Created at",
+  "workflows-task-table-header-started-at": "Started at",
+  "workflows-task-table-header-ended-at": "Ended at",
+  "workflows-task-table-header-execute-task": "",
+  "workflows-task-table-execute-task-button-label": "Execute task",
+
+  "workflows-workflow-table-header-identifier": "Identifier",
+  "workflows-workflow-table-header-name": "Name",
+  "workflows-workflow-table-header-owner": "Owner",
+  "workflows-workflow-table-header-execution-state": "Execution state",
+  "workflows-workflow-table-header-created-at": "Created at",
+  "workflows-workflow-table-header-started-at": "Started at",
+  "workflows-workflow-table-header-ended-at": "Ended at",
+  "workflows-workflow-table-header-start-workflow": "",
+  "workflows-workflow-table-start-workflow-button-label": "Start workflow",
+
+  "workflows-paginated-table-widget-ordering-bar-label": "Ordering",
+  "workflows-paginated-table-widget-ordering-input-descending": "Descending",
+  "workflows-paginated-table-widget-ordering-input-ascending": "Ascending",
+  "workflows-paginated-table-widget-ordering-button-label": "Apply",
+  "workflows-paginated-table-widget-limit-bar-label": "Show on page",
+  "workflows-paginated-table-widget-limit-input-ten": "10",
+  "workflows-paginated-table-widget-limit-input-twenty-five": "25",
+  "workflows-paginated-table-widget-limit-input-fifty": "50",
+  "workflows-paginated-table-widget-limit-button-label": "Apply",
+
+  "workflows-create-workflow-widget-select-workflow-bar-label": "Workflow",
+  "workflows-create-workflow-widget-select-workflow-button-label": "Select",
+  "workflows-create-workflow-widget-table-header-variable-name": "Variable name",
+  "workflows-create-workflow-widget-table-header-variable-type": "Variable type",
+  "workflows-create-workflow-widget-table-header-variable-value": "Variable value",
+  "workflows-create-workflow-widget-table-empty-variable-name": "–",
+  "workflows-create-workflow-widget-table-empty-variable-type": "–",
+  "workflows-create-workflow-widget-table-empty-variable-value": "–",
+  "workflows-create-workflow-widget-create-workflow-button-label": "Create workflow",
+  "workflows-create-workflow-widget-input-is-not-valid-alert": "Input for variable \"$1\" is not valid",
+  "workflows-create-workflow-widget-workflow-created-alert": "Workflow \"$1\" is created!"
+}

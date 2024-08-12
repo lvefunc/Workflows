@@ -1,0 +1,88 @@
+.oo-ui-menuLayout-expanded, .oo-ui-menuLayout-expanded > .oo-ui-menuLayout-menu, .oo-ui-menuLayout-expanded > .oo-ui-menuLayout-content {
+    position: inherit;
+}
+
+.oo-ui-panelLayout-expanded {
+    position: inherit;
+}
+
+.ext-workflows-table-widget > table, .ext-workflows-table-widget > table > thead > tr > th, .ext-workflows-table-widget > table > tbody > tr > td {
+    border-collapse: collapse;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c8ccd1;
+}
+
+.ext-workflows-table-widget thead tr th:first-child {
+    border-radius: 2px 0 0 0;
+}
+
+.ext-workflows-table-widget thead tr th:last-child {
+    border-radius: 0 2px 0 0;
+}
+
+.ext-workflows-table-widget tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 2px;
+}
+
+.ext-workflows-table-widget tbody tr:last-child td:last-child {
+    border-radius: 0 0 2px 0;
+}
+
+.ext-workflows-table-widget tr {
+    height: 32px;
+}
+
+.ext-workflows-table-widget th {
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ext-workflows-table-widget td {
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ext-workflows-table-widget thead tr {
+    background-color: #c8ccd1;
+}
+
+.ext-workflows-table-widget tbody tr:nth-child(odd) {
+}
+
+.ext-workflows-table-widget tbody tr:nth-child(even) {
+    background-color: #c8ccd1;
+}
+
+.ext-workflows-paginated-table-widget .ext-workflows-paginated-table-widget-content {
+}
+
+.ext-workflows-paginated-table-widget .ext-workflows-paginated-table-widget-control-bars {
+    margin-top: 12px;
+}
+
+.ext-workflows-paginated-table-widget .oo-ui-actionFieldLayout {
+    width: 600px;
+}
+
+.ext-workflows-paginated-table-widget .oo-ui-horizontalLayout {
+    display: inline;
+}
+
+.ext-workflows-create-workflow-widget .oo-ui-actionFieldLayout {
+    width: 600px;
+}
+
+.ext-workflows-create-workflow-widget .ext-workflows-create-workflow-widget-create-workflow-area {
+    margin-top: 12px;
+}
+
+.ext-workflows-create-workflow-widget table {
+    width: 900px;
+}
+
+.ext-workflows-create-workflow-widget th {
+    width: 33%;
+}

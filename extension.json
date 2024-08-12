@@ -1,0 +1,168 @@
+{
+  "name": "Workflows",
+  "author": [
+    "lvefunc"
+  ],
+  "url": "",
+  "description": "",
+  "license-name": "GPL-2.0-or-later",
+  "type": "other",
+  "requires": {
+    "MediaWiki": ">= 1.35.0",
+    "extensions": {
+      "MiniORM": "*"
+    }
+  },
+  "GroupPermissions": {
+    "user": {
+      "workflows-user-powers": true
+    },
+    "bureaucrat": {
+      "workflows-admin-powers": true
+    },
+    "sysop": {
+      "workflows-admin-powers": true
+    }
+  },
+  "AvailableRights": [
+    "workflows-user-powers",
+    "workflows-admin-powers"
+  ],
+  "AutoloadNamespaces": {
+    "Workflows\\": "includes/"
+  },
+  "APIModules": {
+    "workflows": "Workflows\\Api\\ApiWorkflows"
+  },
+  "SpecialPages": {
+    "Workflows": "Workflows\\Special"
+  },
+  "Hooks": {
+    "RegisterSchemaUpdates": "Workflows\\Hooks::registerSchemaUpdates",
+    "RegisterWorkflowsModules": "Workflows\\Hooks::registerWorkflowsModules",
+    "BeforeCreateEchoEvent": "Workflows\\Hooks::onBeforeCreateEchoEvent",
+    "EchoGetBundleRules": "Workflows\\Hooks::onEchoGetBundleRules"
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "Workflows/modules"
+  },
+  "ResourceModules": {
+    "ext.workflows.special": {
+      "packageFiles": [
+        "ext.workflows.special.js"
+      ],
+      "dependencies": [
+        "ext.workflows.ui"
+      ],
+      "messages": [
+        "workflows-special-my-workflows",
+        "workflows-special-my-tasks",
+        "workflows-special-create-workflow"
+      ]
+    },
+    "ext.workflows.model": {
+      "scripts": [
+        "model/ext.workflows.model.js",
+        "model/ext.workflows.model.User.js",
+        "model/ext.workflows.model.Value.js",
+        "model/ext.workflows.model.State.js",
+        "model/ext.workflows.model.Task.js",
+        "model/ext.workflows.model.RequiredInput.js",
+        "model/ext.workflows.model.Definition.js",
+        "model/ext.workflows.model.Input.js",
+        "model/ext.workflows.model.Workflow.js"
+      ],
+      "dependencies": [
+        "mediawiki.api",
+        "oojs"
+      ],
+      "messages": [
+        "workflows-model-state-empty-timestamp",
+        "workflows-model-state-not-started",
+        "workflows-model-state-in-progress",
+        "workflows-model-state-completed",
+        "workflows-model-state-skipped",
+        "workflows-model-state-obsolete",
+        "workflows-model-required-input-boolean",
+        "workflows-model-required-input-integer",
+        "workflows-model-required-input-text"
+      ]
+    },
+    "ext.workflows.ui": {
+      "scripts": [
+        "ui/ext.workflows.ui.js",
+        "ui/ext.workflows.ui.Header.js",
+        "ui/ext.workflows.ui.Row.js",
+        "ui/ext.workflows.ui.TableWidget.js",
+        "ui/ext.workflows.ui.Renderer.js",
+        "ui/ext.workflows.ui.TaskRenderer.js",
+        "ui/ext.workflows.ui.WorkflowRenderer.js",
+        "ui/ext.workflows.ui.PaginatedTableWidget.js",
+        "ui/ext.workflows.ui.CreateWorkflowWidget.js",
+        "ui/ext.workflows.ui.Special.js",
+        "ui/ext.workflows.ui.TaskExecutor.js"
+      ],
+      "dependencies": [
+        "oojs",
+        "oojs-ui-core",
+        "oojs-ui-widgets",
+        "oojs-ui.styles.icons-movement",
+        "ext.workflows.model"
+      ],
+      "styles": [
+        "ui/ext.workflows.ui.css"
+      ],
+      "messages": [
+        "workflows-task-table-header-identifier",
+        "workflows-task-table-header-type",
+        "workflows-task-table-header-assignee",
+        "workflows-task-table-header-execution-state",
+        "workflows-task-table-header-created-at",
+        "workflows-task-table-header-started-at",
+        "workflows-task-table-header-ended-at",
+        "workflows-task-table-header-execute-task",
+        "workflows-task-table-execute-task-button-label",
+        "workflows-workflow-table-header-identifier",
+        "workflows-workflow-table-header-name",
+        "workflows-workflow-table-header-owner",
+        "workflows-workflow-table-header-execution-state",
+        "workflows-workflow-table-header-created-at",
+        "workflows-workflow-table-header-started-at",
+        "workflows-workflow-table-header-ended-at",
+        "workflows-workflow-table-header-start-workflow",
+        "workflows-workflow-table-start-workflow-button-label",
+        "workflows-paginated-table-widget-ordering-bar-label",
+        "workflows-paginated-table-widget-ordering-input-descending",
+        "workflows-paginated-table-widget-ordering-input-ascending",
+        "workflows-paginated-table-widget-ordering-button-label",
+        "workflows-paginated-table-widget-limit-bar-label",
+        "workflows-paginated-table-widget-limit-input-ten",
+        "workflows-paginated-table-widget-limit-input-twenty-five",
+        "workflows-paginated-table-widget-limit-input-fifty",
+        "workflows-paginated-table-widget-limit-button-label",
+        "workflows-create-workflow-widget-select-workflow-bar-label",
+        "workflows-create-workflow-widget-select-workflow-button-label",
+        "workflows-create-workflow-widget-table-header-variable-name",
+        "workflows-create-workflow-widget-table-header-variable-type",
+        "workflows-create-workflow-widget-table-header-variable-value",
+        "workflows-create-workflow-widget-table-empty-variable-name",
+        "workflows-create-workflow-widget-table-empty-variable-type",
+        "workflows-create-workflow-widget-table-empty-variable-value",
+        "workflows-create-workflow-widget-create-workflow-button-label",
+        "workflows-create-workflow-widget-input-is-not-valid-alert",
+        "workflows-create-workflow-widget-workflow-created-alert"
+      ]
+    }
+  },
+  "ExtensionMessagesFiles": {
+    "WorkflowsAlias": "Workflows.i18n.alias.php"
+  },
+  "MessagesDirs": {
+    "Workflows": [
+      "i18n",
+      "i18n/api"
+    ]
+  },
+  "manifest_version": 2
+}

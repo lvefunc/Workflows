@@ -1,0 +1,45 @@
+{
+  "@metadata": {
+    "authors": [
+      "lvefunc"
+    ]
+  },
+  "workflows": "Рабочие процессы",
+  "workflows-special-my-workflows": "Мои процессы",
+  "workflows-special-my-tasks": "Мои задачи",
+  "workflows-special-create-workflow": "Создание процесса",
+
+  "workflows-model-state-not-started": "Не начиналось",
+  "workflows-model-state-in-progress": "Выполняется",
+  "workflows-model-state-completed": "Завершено",
+  "workflows-model-state-skipped": "Пропущено",
+
+  "workflows-task-table-header-identifier": "Идентификатор",
+  "workflows-task-table-header-assignee": "Выполняющий",
+  "workflows-task-table-header-exec-state": "Состояние",
+  "workflows-task-table-header-created-at": "Время создания",
+  "workflows-task-table-header-started-at": "Время запуска",
+  "workflows-task-table-header-ended-at": "Время окончания",
+  "workflows-task-table-header-exec-task": "",
+  "workflows-task-table-exec-task-button-label": "Выполнить",
+
+  "workflows-workflow-table-header-identifier": "Идентификатор",
+  "workflows-workflow-table-header-name": "Название",
+  "workflows-workflow-table-header-owner": "Владелец",
+  "workflows-workflow-table-header-exec-state": "Состояние",
+  "workflows-workflow-table-header-created-at": "Время создания",
+  "workflows-workflow-table-header-started-at": "Время запуска",
+  "workflows-workflow-table-header-ended-at": "Время окончания",
+  "workflows-workflow-table-header-start-workflow": "",
+  "workflows-workflow-table-start-workflow-button-label": "Запустить",
+
+  "workflows-table-widget-ordering-control-label": "Порядок",
+  "workflows-table-widget-ordering-input-ascending": "Возрастающий",
+  "workflows-table-widget-ordering-input-descending": "Убывающий",
+  "workflows-table-widget-ordering-button-label": "Подтвердить",
+  "workflows-table-widget-limit-control-label": "Показывать",
+  "workflows-table-widget-limit-input-ten": "10",
+  "workflows-table-widget-limit-input-twenty-five": "25",
+  "workflows-table-widget-limit-input-fifty": "50",
+  "workflows-table-widget-limit-button-label": "Подтвердить"
+}
